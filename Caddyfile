@@ -6,6 +6,11 @@
 		reverse_proxy http://hello-fleet.railway.internal:8080
 	}
 
+	@my_e2e_test host my-e2e-test.agents.turingplanet.ai
+	handle @my_e2e_test {
+		reverse_proxy http://my-e2e-test.railway.internal:8080
+	}
+
 	handle {
 		respond "unknown agent — see https://agents.turingplanet.ai" 404
 	}
