@@ -21,6 +21,11 @@
 		reverse_proxy http://hello-fleet.railway.internal:8080
 	}
 
+	@job_agent host job-agent.agents.turingplanet.ai
+	handle @job_agent {
+		reverse_proxy http://job-agent.railway.internal:8080
+	}
+
 	handle {
 		respond "unknown agent — see https://agents.turingplanet.ai" 404
 	}
