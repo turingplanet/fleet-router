@@ -26,6 +26,11 @@
 		reverse_proxy http://job-agent.railway.internal:8080
 	}
 
+	@mcp host mcp.agents.turingplanet.ai
+	handle @mcp {
+		reverse_proxy http://mcp.railway.internal:8080
+	}
+
 	handle {
 		respond "unknown agent — see https://agents.turingplanet.ai" 404
 	}
