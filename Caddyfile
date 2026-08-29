@@ -6,11 +6,6 @@
 		reverse_proxy http://e2e-scratch-test.railway.internal:8080
 	}
 
-	@e2e_scratch_test3 host e2e-scratch-test3.agents.turingplanet.ai
-	handle @e2e_scratch_test3 {
-		reverse_proxy http://e2e-scratch-test3.railway.internal:8080
-	}
-
 	@erkang host erkang.agents.turingplanet.ai
 	handle @erkang {
 		reverse_proxy http://erkang.railway.internal:8080
