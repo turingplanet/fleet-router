@@ -46,11 +46,6 @@
 		reverse_proxy http://scicomagent.railway.internal:8080
 	}
 
-	@scicomagent_web host scicomagent-web.agents.turingplanet.ai
-	handle @scicomagent_web {
-		reverse_proxy http://scicomagent-web.railway.internal:8080
-	}
-
 	handle {
 		respond "unknown agent — see https://agents.turingplanet.ai" 404
 	}
