@@ -41,6 +41,11 @@
 		reverse_proxy http://perspective-bridge.railway.internal:8080
 	}
 
+	@scicom_api host scicom-api.agents.turingplanet.ai
+	handle @scicom_api {
+		reverse_proxy http://scicom-api.railway.internal:8080
+	}
+
 	@scicomagent host scicomagent.agents.turingplanet.ai
 	handle @scicomagent {
 		reverse_proxy http://scicomagent.railway.internal:8080
